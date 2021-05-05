@@ -1,0 +1,16 @@
+{
+  "name": "enft",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ minsu-daniel-kim/enft",
+    "create-local": "graph create --node http://localhost:8020/ minsu-daniel-kim/enft",
+    "remove-local": "graph remove --node http://localhost:8020/ minsu-daniel-kim/enft",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 minsu-daniel-kim/enft"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.20.0",
+    "@graphprotocol/graph-ts": "0.20.0"
+  }
+}
